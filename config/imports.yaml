@@ -1,0 +1,98 @@
+# Maps import_name -> GCS middle-path segments in gs://<imports_bucket>/.
+# Full path shape: gs://<imports_bucket>/<path_prefix>/<TIMESTAMP_DIR>/
+# The middle-path segments are not carried in the log payload, so we source them here.
+
+
+imports:
+  WorldDevelopmentIndicators:
+    path_prefix: "scripts/world_bank/wdi/WorldDevelopmentIndicators"
+  WorldBankDatasets:
+    path_prefix: "scripts/world_bank/datasets/WorldBankDatasets"
+  EIA_NuclearOutages:
+    path_prefix: "scripts/us_eia/opendata/EIA_NuclearOutages"
+  EIA_NaturalGas:
+    path_prefix: "scripts/us_eia/opendata/EIA_NaturalGas"
+  EIA_SEDS:
+    path_prefix: "scripts/us_eia/opendata/EIA_SEDS"
+  US_Federal_Rates:
+    path_prefix: "statvar_imports/us_federal_reserve_h15_interest_rates/us_federal_rates/US_Federal_Rates"
+  USFed_ConstantMaturityRates:
+    path_prefix: "scripts/us_fed/treasury_constant_maturity_rates/USFed_ConstantMaturityRates"
+  UNData:
+    path_prefix: "statvar_imports/undata/UNData"
+  UNEnergy:
+    path_prefix: "scripts/un/energy/UNEnergy"
+  HUD_IncomeLimits:
+    path_prefix: "scripts/us_hud/income/HUD_IncomeLimits"
+  CDC500:
+    path_prefix: "scripts/us_cdc/500_places/CDC500"
+  CDC500_States:
+    path_prefix: "scripts/us_cdc/cdc500_state/CDC500_States"
+  Denmark_Demographics:
+    path_prefix: "statvar_imports/denmark_demographics/Denmark_Demographics"
+  NCES_Bachelors_Degree_By_Field_Import:
+    path_prefix: "statvar_imports/us_bachelors_degree_data/nces_bachelors_degree_by_field_import/NCES_Bachelors_Degree_By_Field_Import"
+  NCES_SchoolDistrict:
+    path_prefix: "scripts/us_nces/demographics/school_district/NCES_SchoolDistrict"
+  USCensusPEP_AgeSexRace:
+    path_prefix: "scripts/us_census/pep/population_estimates_by_asr/USCensusPEP_AgeSexRace"
+  USCensusPEP_Sex:
+    path_prefix: "scripts/us_census/pep/us_pep_sex/USCensusPEP_Sex"
+  USCensusPEP_Annual_Population:
+    path_prefix: "scripts/us_census/pep/annual_population/USCensusPEP_Annual_Population"
+  USMonthlyRetailSales:
+    path_prefix: "statvar_imports/us_census/us_monthly_retail_sales/USMonthlyRetailSales"
+  EurostatData_Education_Enrollment:
+    path_prefix: "scripts/eurostat/regional_statistics_by_nuts/education_enrollment/EurostatData_Education_Enrollment"
+  EurostatData_LifeExpectancy:
+    path_prefix: "scripts/eurostat/regional_statistics_by_nuts/life_expectancy/EurostatData_LifeExpectancy"
+  EurostatData_Fertility:
+    path_prefix: "scripts/eurostat/regional_statistics_by_nuts/fertility_rate_mother_age/EurostatData_Fertility"
+  EurostatData_GDP:
+    path_prefix: "scripts/eurostat/regional_statistics_by_nuts/gdp/EurostatData_GDP"
+  EurostatData_PopulationDensity:
+    path_prefix: "scripts/eurostat/regional_statistics_by_nuts/population_density/EurostatData_PopulationDensity"
+  EurostatData_Demographic_Balance_Crude_Rates:
+    path_prefix: "scripts/eurostat/regional_statistics_by_nuts/birth_death_migration/EurostatData_Demographic_Balance_Crude_Rates"
+  EurostatData_Education_Attainment:
+    path_prefix: "scripts/eurostat/regional_statistics_by_nuts/education_attainment/EurostatData_Education_Attainment"
+  EurostatData_Employment_Per_Sector:
+    path_prefix: "scripts/eurostat/regional_statistics_by_nuts/employed_per_sector/EurostatData_Employment_Per_Sector"
+  EurostatHealth_Tobacco_Consumption:
+    path_prefix: "scripts/eurostat/health_determinants/EurostatHealth_Tobacco_Consumption"
+  BLS_CPI:
+    path_prefix: "scripts/us_bls/cpi/BLS_CPI"
+  BLS_CPI_Category:
+    path_prefix: "statvar_imports/us_bls/cpi_category/BLS_CPI_Category"
+  BLS_CES_State:
+    path_prefix: "statvar_imports/us_bls/bls_ces_state"
+  USStatesQuarterlyGDP:
+    path_prefix: "scripts/us_bea/states_gdp/BEA_USStatesQuarterlyGDP"
+  BEA_USStatesQuarterlyGDP:
+    path_prefix: "scripts/us_bea/states_gdp/BEA_USStatesQuarterlyGDP"
+  WorldBank_CommodityMarket:
+    path_prefix: "statvar_imports/world_bank/commodity_market/WorldBank_CommodityMarket"
+  US_SAT_ACT_Participation:
+    path_prefix: "statvar_imports/us_urban_school/sat_act_participation/school/US_SAT_ACT_Participation"
+  US_SAT_ACT_Participation_state:
+    path_prefix: "statvar_imports/us_urban_school/sat_act_participation/state/US_SAT_ACT_Participation_state"
+  OECDRegionalDemography_LifeExpectancy:
+    path_prefix: "scripts/oecd/regional_demography/life_expectancy/OECDRegionalDemography_LifeExpectancy"
+  FBIGovCrime:
+    path_prefix: "statvar_imports/fbi/fbigovcrime/FBIGovCrime"
+  GenderIncomeInequality:
+    path_prefix: "scripts/us_census/gender_income_inequality/GenderIncomeInequality"
+  WHO_COVID19:
+    path_prefix: "statvar_imports/who_covid19/WHO_COVID19"
+  OECDRegionalDemography_Population:
+    path_prefix: "scripts/oecd/regional_demography/population/OECDRegionalDemography_Population"
+  OECDRegionalDemography_PopulationDensity:
+    path_prefix: "scripts/oecd/regional_demography/pop_density/OECDRegionalDemography_PopulationDensity"
+  FAO_Currency_statvar:
+    path_prefix: "statvar_imports/fao_currency_and_exchange_rate/fao_currency_statvar/FAO_Currency_statvar"
+  EPAAirQualityIndex:
+    path_prefix: "scripts/us_epa/airqualityindex/EPAAirQualityIndex"
+  CensusCountyBusinessPatterns:
+    path_prefix: "scripts/census_county_business_patterns/CensusCountyBusinessPatterns"
+  BIS_CentralBankPolicyRate:
+    path_prefix: "statvar_imports/bis/bis_central_bank_policy_rate/BIS_CentralBankPolicyRate"

@@ -1,0 +1,17 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+config/remediation/
+config/historical_archives/
+config/test_verification_*.json
+.env
+scratch/
+simulate_trigger.py
+*.log
+.DS_Store
+
+
